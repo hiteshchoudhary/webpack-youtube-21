@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log(["Jaipur","Delhi","Paris"])})();
+(()=>{const e=document.getElementById("colorInput");document.getElementById("btnChangeColor").addEventListener("click",(()=>{const o=e.value;return o?!o.includes("#")||o.length>7?alert("Please Enter valid hex color"):(localStorage.setItem("color",o),void(document.body.style.backgroundColor=o)):alert("Please Enter a color")})),window.addEventListener("DOMContentLoaded",(()=>{const e=localStorage.getItem("color");document.body.style.backgroundColor=e||"#5a20cb"}))})();
